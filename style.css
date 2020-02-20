@@ -89,18 +89,18 @@ div.page div.footer {
     padding: 5px 10px;
     font-size: 12px;
 }
-.container {
+div.container {
   position: relative;
   width: 100%;
 }
 
-.image {
+div.image {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.overlay {
+div.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -113,11 +113,11 @@ div.page div.footer {
   background-color: #008CBA;
 }
 
-.container:hover .overlay {
+div.container:hover .overlay {
   opacity: 1;
 }
 
-.text {
+div.text {
   color: white;
   font-size: 13px;
   position: absolute;
