@@ -113,7 +113,7 @@ div.overlay {
   background-color: #008CBA;
 }
 
-div.container:hover .overlay {
+div.container:hover div.overlay {
   opacity: 1;
 }
 
