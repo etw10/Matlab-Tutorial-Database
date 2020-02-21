@@ -1,5 +1,5 @@
 body {
-    background-image: radial-gradient(rgba(213,86,51,0), rgba(213,86,51,1));
+    background: #DEE9E8; /*#D55633;*/
     font-family: 'Verdana', sans-serif;
     font-size: 14px;
 }
@@ -24,8 +24,8 @@ table, th, td{
   /*border: 1px solid black;
   border-collapse: collapse;*/
   text-align: center;
-  width: 50%;
-  heigh: 75%;
+  width: 33.33%;
+  height: 100%;
 }
 
 table#Teams{
@@ -35,13 +35,13 @@ table#Teams{
 
 table#One{
   height: 260px;
-  width:100%;
+  width: 50%;
 }
 
 div.page {
     background: white;
     border: 1px solid #004E8C;
-    width: 1000px;
+    width: 99%;
 
     margin: 30px auto;
 
@@ -58,7 +58,7 @@ div.page h1 {
 }
 
 div.page div.navigation {
-    background: #0b7dda;
+    background: #DEE9E8;
     padding: 4px 10px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #eee;
@@ -68,11 +68,10 @@ div.page div.navigation {
 }
 
 div.page div.navigation a {
-    margin: 5px;
-    color: white;
+    color: #444;
     font-weight: bold;
-    letter-spacing: 1px;
-    text-shadow: 0 0 3px #999;
+}
+
 div.page h2 {
     margin: 0 0 15px 0;
     color: #004E8C;
@@ -94,6 +93,8 @@ div.page div.footer {
 .container {
   position: relative;
   width: 100%;
+ 
+  
 }
 
 .image {
@@ -130,4 +131,8 @@ div.page div.footer {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+
+
 
