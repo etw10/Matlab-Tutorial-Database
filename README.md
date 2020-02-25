@@ -20,7 +20,7 @@ brew install git
 
 Then pull desired repository to you working place:
 ```
-git clone "" Link to Repository ""
+git clone https://github.com/etw10/Matlab-Tutorial-Database
 ```
 
 This will create a new folder with the repository name under your working directory
