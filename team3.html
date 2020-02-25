@@ -1,5 +1,51 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #004E8C;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+
 <title>Advanced | Con Academy</title>
 <div class="page">
   <h1>Advanced
@@ -8,6 +54,15 @@
 
   <div class="navigation">
   </div>
+	
+    <br>
+    <br>
+    
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Search.." name="search2">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+	
     <div class="body" align="center">
       <table id="One" align="center">
   <!--all that needs to be done is to enter the links and rename the captions -->
@@ -51,19 +106,70 @@
 			</td>
        </tr>
       </tr>
-
-
-      
-
-
-
-
-
-
-
-
       </table>
     </div>
+
+
+<br>
+
+    <h1>Contribute:</h1>
+    <div class="body" align="center">
+        
+        <br>
+        
+        <td>
+            Want to contribute to this page? Upload a submission here:<br><br>
+        </td>
+        
+        <style media="screen">
+        #custom-button {
+            
+            padding: 10px;
+            color: white;
+            background-color: #004E8C;
+            border: 1px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #custom-button:hover {
+            background-color: #0b7dda;
+        }
+        #custom-text {
+            margin-left: 10px;
+            font-family: sans-serif;
+            color: #aaa;
+        }
+        </style>
+        <body>
+            <input type="file" id="real-file" hidden="hidden"/>
+            <button type="button" id="custom-button">CHOOSE A FILE</button>
+            <span id="custom-text">No file chosen yet</span>
+
+            <script type="text/javascript">
+                const realFileBtn = document.getElementById("real-file");
+                const customBtn = document.getElementById("custom-button");
+                const customTxt = document.getElementById("custom-text");
+
+                customBtn.addEventListener("click", function() {
+                    realFileBtn.click();
+                });
+
+                realFileBtn.addEventListener("change", function() {
+                    if (realFileBtn.value){
+                        customTxt.innerHTML = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                    } else{
+                        customTxt.innerHTML = "No file chosen yet";
+                    }
+                });
+            </script>
+
+        </body>
+        
+        <br>
+    </div>
+    
+    <br>
+
   <div class="footer">
     Con Academy
   </div>
