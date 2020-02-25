@@ -50,3 +50,7 @@ git pull
 ```
 
 This will automatically merge the conflicts between the remote and local repository most of the time regarding the structure of our repository. However, sometimes it requires manual conflicts resolution when **a same file** is edited by both you in your local commits and other team members in their commits that are already pushed. Use ```git status``` to trace differences and view the code on the website. Delete and backup the conflict files on your local repository and then pull it again.
+
+## Recommendations
+
+Something I find helpful to avoid version conflicts is to create a seperate, working folder. When I am ready to commit changes, I first pull to the main directory, then manually add my changes from the working folder before pushing. Git tells you what files have changed when you pull, so if the one you changed hasn't changed, you can just drag the file from the working directory to the main and replace the original file.
