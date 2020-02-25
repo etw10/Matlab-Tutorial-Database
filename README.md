@@ -18,7 +18,7 @@ Alternatively, install from website if on Windows
 brew install git
 ```
 
-Then pull desired repository to you working place:
+Then pull desired repository to your working place (Make sure to be in the intended directory):
 ```
 git clone https://github.com/etw10/Matlab-Tutorial-Database
 ```
